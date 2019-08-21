@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="<?php echo site_url('assets/vendor/fontawesome/css/font-awesome.min.css'); ?>">
     <link rel="stylesheet" href="<?php echo site_url('assets/vendor/smartwizard/smart_wizard.css'); ?>">
     <link rel="stylesheet" href="<?php echo site_url('assets/vendor/smartwizard/smart_wizard_theme_arrows.css'); ?>">
+    <link rel="stylesheet" href="<?php echo site_url('assets/css/admin/login.css'); ?>">
     <link rel="stylesheet" href="<?php echo site_url('assets/css/admin/admin.css'); ?>">
 </head>
 <body>
@@ -64,7 +65,7 @@
                                     <div class="d-flex" id="form-step-1">
                                         <div class="p-2 flex-fill">
                                             <h5 class="text-center pt-5 text-muted">Connect to a MySQL Database</h5><br /><br />
-                                            <img src="<?php echo site_url('assets/img/admin/mysql.png'); ?>" class="media-thumbnail center" /></div>
+                                            <img src="<?php echo site_url('assets/img/admin/mysql.png'); ?>" class="media-thumbnail" /></div>
                                         <div class="p-2 flex-fill">
                                             <br />
                                             <div class="form-group">
@@ -90,7 +91,7 @@
                                     <div class="d-flex" id="form-step-2">
                                         <div class="p-2 flex-fill">
                                             <h5 class="text-center text-muted pt-5">Create an Administrator Account</h5><br /><br />
-                                            <img src="<?php echo site_url('assets/img/admin/user.png'); ?>" class="media-thumbnail center" />
+                                            <img src="<?php echo site_url('assets/img/admin/user.png'); ?>" class="media-thumbnail" />
                                         </div>
                                         <div class="p-2 flex-fill">
                                             <br />
@@ -127,7 +128,7 @@
                                     <div class="d-flex" id="form-step-3">
                                         <div class="p-2 flex-fill">
                                             <h5 class="text-center text-muted pt-5">Setup Your Website</h5><br />
-                                            <img src="<?php echo site_url('assets/img/admin/browser.png'); ?>" class="media-thumbnail center pb-5" /></div>
+                                            <img src="<?php echo site_url('assets/img/admin/browser.png'); ?>" class="media-thumbnail pb-5" /></div>
                                         <div class="p-2 flex-fill py-5">
                                             <br />
                                             <div class="form-group">
