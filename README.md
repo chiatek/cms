@@ -1,6 +1,6 @@
 # Chiatek CMS
 
-A simple free [MIT](LICENSE.md) open source content management system, built with PHP, PDO, Bootstrap, and jQuery.
+A simple free [MIT](LICENSE) open source content management system, built with PHP, PDO, Bootstrap, and jQuery.
 
 ### Prerequisites
 
@@ -42,4 +42,4 @@ Ubuntu Linux 18.04.1 + Apache 2.4.29 + PHP 7.3.7-2 + MySQL 5.7.27
 
 ### License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details
