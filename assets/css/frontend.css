@@ -1,0 +1,32 @@
+/* Frontend main CSS file */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body {
+	padding-top: 80px;
+}
+
+.navbar {
+	padding: 8px;
+}
+
+.bg-image-full {
+	background: no-repeat center center scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+
+@media (max-width: 992px) {
+    
+    .sidebar-widgets-column {
+        display: none;
+    }
+    
+}
