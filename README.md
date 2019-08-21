@@ -1,6 +1,6 @@
 # Chiatek CMS
 
-A simple free open source content management system, built using PHP, Bootstrap, and JQuery.
+A simple free [MIT](LICENSE.md) open source content management system, built with PHP, PDO, Bootstrap, and jQuery.
 
 ### Prerequisites
 
@@ -24,7 +24,7 @@ mod_rewrite
 Ubuntu Linux 18.04.1 + Apache 2.4.29 + PHP 7.3.7-2 + MySQL 5.7.27
 ```
 
-### Built With
+### Integrated Projects
 
 * [Bootstrap](https://getbootstrap.com)
 * [Codemirror](https://codemirror.net)
