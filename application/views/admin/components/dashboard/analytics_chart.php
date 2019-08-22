@@ -23,8 +23,8 @@
             </select>
         </div>
     </div>
-    <div class="card-body m-0 p-0 mb-4">
-        <div id="ajax-ga-chart" style="width: 100%; height: 350px;"></div>
+    <div class="card-body">
+        <div id="ajax-ga-chart" style="width: auto; min-height: 330px; margin: -20px -65px -10px -40px;"></div>
     </div>
 </div>
 <!-- End Google Analytics Chart -->

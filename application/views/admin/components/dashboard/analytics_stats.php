@@ -15,7 +15,7 @@
         </div>
     </div>
     <div class="card-body mb-4">
-        <div id="ajax-ga-stats" style="width: 100%; height: 300px;"></div>
+        <div id="ajax-ga-stats" style="width: 100%; min-height: 250px;"></div>
     </div>
 </div>
 <!-- End Google Analytics Stats -->
