@@ -30,6 +30,7 @@ Ubuntu Linux 18.04.1 + Apache 2.4.29 + PHP 7.3.7-2 + MySQL 5.7.27
 * [Codemirror](https://codemirror.net)
 * [Cropper JS](https://fengyuanchen.github.io/cropperjs/)
 * [Datatables](https://datatables.net)
+* [Dropzone](https://dropzonejs.com)
 * [Font Awesome](https://fontawesome.com/?from=io)
 * [jq.mulitInput](https://jako.github.io/jq.multiInput/)
 * [Nestable](https://github.com/dbushell/Nestable)
@@ -37,7 +38,6 @@ Ubuntu Linux 18.04.1 + Apache 2.4.29 + PHP 7.3.7-2 + MySQL 5.7.27
 * [Summernote](https://summernote.org/)
 * [Toastr](https://github.com/CodeSeven/toastr)
 * [JQuery Validation](https://jqueryvalidation.org/)
-* [Toastr](https://github.com/CodeSeven/toastr)
 * [VvvebJS](https://github.com/givanz/VvvebJs)
 
 ### License
