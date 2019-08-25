@@ -241,11 +241,11 @@
                                     </div>
                                     <div class="form-group">
                                         <span class="text-muted"><strong>PHP Version:</strong></span>
-                                        <span><?php echo phpversion(); ?></span>
+                                        <span class="text-muted"><?php echo phpversion(); ?></span>
                                     </div>
                                     <div class="form-group">
                                         <span class="text-muted"><strong>Client library version:</strong></span>
-                                        <span><?php echo $this->db->client_version(); ?></span>
+                                        <span class="text-muted"><?php echo $this->db->client_version(); ?></span>
                                     </div>
                                     <div class="form-group">
                                         <span class="text-muted"><strong>Server version:</strong></span>
