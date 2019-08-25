@@ -152,7 +152,7 @@ class User_model extends DB {
                 if (count($rows[0]) == 9) {
                     $str = '<div class="row justify-content-around p-3">
                                 <div class="col-4 text-center text-primary shadow-sm bg-light rounded py-1">
-                                    <small>Users</small><br><h4>'.$rows[0][0].'</h4>
+                                    <small>Sessions</small><br><h4>'.$rows[0][0].'</h4>
                                 </div>
                                 <div class="col-3 text-center text-primary shadow-sm bg-light rounded py-1">
                                     <small>Users</small><br><h4>'.$rows[0][1].'</h4>
