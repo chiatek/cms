@@ -262,7 +262,7 @@
 										</label>
                                     </div>
                                     <hr />
-                                    <label class="form-label"><strong>copyright</strong> chiatek.com &copy; 2019</label>
+                                    <label class="form-label"><strong>Copyright</strong> &copy; chiatek 2019</label>
                                 </div>
                             </div>
 
