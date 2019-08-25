@@ -232,31 +232,37 @@
                             <div class="tab-pane fade" id="settings-about">
                                 <div class="card-body">
                                     <div class="form-group">
-                                        <span class="text-muted"><strong>CMS version:</strong></span>
-                                        <span class="text-muted"><?php echo config('cms_version'); ?></span>
+										<label class="form-label">CMS Version:
+											<span class="text-muted"><?php echo config('cms_version'); ?></span>
+										</label>
                                     </div>
                                     <div class="form-group">
-                                        <span class="text-muted"><strong>Database name:</strong></span>
-                                        <span class="text-muted"><?php echo $this->db->database(); ?></span>
+                                        <label class="form-label">Database name:
+											<span class="text-muted"><?php echo $this->db->database(); ?></span>
+										</label>
                                     </div>
                                     <div class="form-group">
-                                        <span class="text-muted"><strong>PHP Version:</strong></span>
-                                        <span class="text-muted"><?php echo phpversion(); ?></span>
+                                        <label class="form-label">PHP Version:
+											<span class="text-muted"><?php echo phpversion(); ?></span>
+										</label>
                                     </div>
                                     <div class="form-group">
-                                        <span class="text-muted"><strong>Client library version:</strong></span>
-                                        <span class="text-muted"><?php echo $this->db->client_version(); ?></span>
+                                        <label class="form-label">Client library version:
+											<span class="text-muted"><?php echo $this->db->client_version(); ?></span>
+										</label>
                                     </div>
                                     <div class="form-group">
-                                        <span class="text-muted"><strong>Server version:</strong></span>
-                                        <span class="text-muted"><?php echo $this->db->server_version(); ?></span>
+                                        <label class="form-label">Server version:
+											<span class="text-muted"><?php echo $this->db->server_version(); ?></span>
+										</label>
                                     </div>
                                     <div class="form-group">
-                                        <span class="text-muted"><strong>Server Info:</strong></span>
-                                        <span class="text-muted"><?php echo $this->db->server_info(); ?></span>
+                                        <label class="form-label">Server Info:
+											<span class="text-muted"><?php echo $this->db->server_info(); ?></span>
+										</label>
                                     </div>
                                     <hr />
-                                    <span class="text-muted"><strong>copyright</strong> chiatek.com &copy; 2019</span>
+                                    <label class="form-label"><strong>copyright</strong> chiatek.com &copy; 2019</label>
                                 </div>
                             </div>
 
