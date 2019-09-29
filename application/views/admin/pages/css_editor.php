@@ -76,7 +76,7 @@
     <script src="<?php echo site_url('assets/vendor/codemirror/mode/css/css.js'); ?>" type="text/javascript"></script>
     <script src="<?php echo site_url('assets/vendor/codemirror/addon/edit/closebrackets.js'); ?>" type="text/javascript"></script>
     <script src="<?php echo site_url('assets/vendor/codemirror/addon/display/fullscreen.js'); ?>" type="text/javascript"></script>
-    <script src="<?php echo site_url('assets/js/codemirror.js'); ?>" type="text/javascript"></script>
+    <script src="<?php echo site_url('assets/js/admin/codemirror.js'); ?>" type="text/javascript"></script>
 
 </body>
 </html>

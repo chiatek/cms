@@ -59,7 +59,7 @@ create table users (
 	user_linkedin varchar(200),
 	user_twitter varchar(200),
 	user_youtube varchar(200),
-	user_avatar varchar(50) not null,
+	user_avatar varchar(200),
 	user_theme varchar(25) not null,
 	user_theme_header varchar(25) not null,
 	user_theme_subheader varchar(25) not null,
@@ -103,6 +103,8 @@ create table comments (
 	post_id int(11) unsigned not null,
 	comment_date datetime not null,
 	comment_name varchar(100) not null,
+	comment_email varchar(200),
+	comment_website varchar(200),
 	comment_text text not null,
 
 	foreign key (post_id) references posts(post_id)
@@ -157,8 +159,8 @@ create table queries (
 	foreign key (user_id) references users(user_id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
-INSERT INTO users (user_id, user_username, user_password, user_name, user_email, user_role, user_status, user_activity, user_avatar, user_theme, user_theme_header, user_theme_subheader, user_theme_footer) VALUES
-(1000, 'user', 'b109f3bbbc244eb82441917ed06d618b9008dd09b3befd1b5e07394c706a8bb980b1d7785e5976ec049b46df5f1326af5a2ea6d103fd07c95385ffab0cacbc86', 'Admin User', 'user@user.com', 'administrator', 'active', '2018-11-01 00:00:00', 'avatar1.png', 'default.css', 'bg-dark header-dark', 'bg-light header-light', 'bg-light header-light');
+INSERT INTO users (user_id, user_username, user_password, user_name, user_email, user_role, user_status, user_activity, user_theme, user_theme_header, user_theme_subheader, user_theme_footer) VALUES
+(1000, 'user', 'b109f3bbbc244eb82441917ed06d618b9008dd09b3befd1b5e07394c706a8bb980b1d7785e5976ec049b46df5f1326af5a2ea6d103fd07c95385ffab0cacbc86', 'Admin User', 'user@user.com', 'administrator', 'active', '2018-11-01 00:00:00', 'default.css', 'bg-dark header-dark', 'bg-light header-light', 'bg-light header-light');
 
 INSERT INTO settings (setting_id, setting_datetime, setting_comments, setting_dashboard_widgets, setting_dashboard_posts, setting_dashboard_pages, setting_dashboard_comments, setting_dashboard_GA) VALUES
 (1, 'F Y h:i:s A', 1, 1, 1, 1, 1, 0);

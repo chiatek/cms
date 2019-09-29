@@ -114,14 +114,7 @@
                                     </div>
 									<div class="form-group">
 										<label class="form-label">Avatar</label>
-										<select class="custom-select" name="user_avatar" form="user-form">
-											<option value="avatar1.png" <?php echo ($row->user_avatar == 'avatar1.png') ? "selected" : ""; ?>>Avatar 1</option>
-											<option value="avatar2.png" <?php echo ($row->user_avatar == 'avatar2.png') ? "selected" : ""; ?>>Avatar 2</option>
-											<option value="avatar3.png" <?php echo ($row->user_avatar == 'avatar3.png') ? "selected" : ""; ?>>Avatar 3</option>
-                                            <option value="avatar4.png" <?php echo ($row->user_avatar == 'avatar4.png') ? "selected" : ""; ?>>Avatar 4</option>
-                                            <option value="avatar5.png" <?php echo ($row->user_avatar == 'avatar5.png') ? "selected" : ""; ?>>Avatar 5</option>
-                                            <option value="avatar6.png" <?php echo ($row->user_avatar == 'avatar6.png') ? "selected" : ""; ?>>Avatar 6</option>
-										</select>
+                                        <input type="text" class="form-control" name="user_avatar" form="user-form" value="<?php echo $row->user_avatar; ?>">
 									</div>
                                 </div>
 
@@ -214,7 +207,7 @@
     <?php $this->view('admin/components/common/javascript', $data); ?>
     <!-- Additinal Javascript -->
     <script src="<?php echo site_url('assets/vendor/toastr/toastr.min.js'); ?>" type="text/javascript"></script>
-    <script src="<?php echo site_url('assets/js/toastr.js'); ?>" type="text/javascript"></script>
+    <script src="<?php echo site_url('assets/js/admin/toastr.js'); ?>" type="text/javascript"></script>
 
 </body>
 </html>

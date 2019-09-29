@@ -187,7 +187,7 @@
     <?php $this->view('admin/components/common/javascript', $data); ?>
     <!-- Additinal Javascript -->
     <script src="<?php echo site_url('assets/vendor/toastr/toastr.min.js'); ?>" type="text/javascript"></script>
-    <script src="<?php echo site_url('assets/js/toastr.js'); ?>" type="text/javascript"></script>
+    <script src="<?php echo site_url('assets/js/admin/toastr.js'); ?>" type="text/javascript"></script>
 
 </body>
 </html>

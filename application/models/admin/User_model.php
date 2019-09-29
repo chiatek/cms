@@ -408,7 +408,7 @@ class User_model extends DB {
     public function insert_data($data) {
 
         $user = "INSERT INTO users (user_id, user_username, user_password, user_name, user_email, user_role, user_status, user_activity, user_avatar, user_theme, user_theme_header, user_theme_subheader, user_theme_footer) VALUES".
-            "(1000, '".$data['user_username']."', '".hash_password($data['user_password'])."', '".$data['user_name']."', '".$data['user_email']."', 'administrator', 'active', '0001-01-01 00:00:00', 'avatar1.png', 'default.css', 'bg-dark header-dark', 'bg-light header-light', 'bg-light header-light');";
+            "(1000, '".$data['user_username']."', '".hash_password($data['user_password'])."', '".$data['user_name']."', '".$data['user_email']."', 'administrator', 'active', '0001-01-01 00:00:00', '".site_url('assets/img/admin/avatar1.png')."', 'default.css', 'bg-dark header-dark', 'bg-light header-light', 'bg-light header-light');";
         $settings = "UPDATE settings SET setting_title='".$data['setting_title']."', setting_tagline='".$data['setting_tagline']."', setting_siteicon='".path('admin_images')."/favicon.png' WHERE setting_id=1";
 
         try {

@@ -92,8 +92,8 @@
     <script src="<?php echo site_url('assets/vendor/codemirror/addon/edit/closebrackets.js'); ?>" type="text/javascript"></script>
     <script src="<?php echo site_url('assets/vendor/codemirror/addon/display/fullscreen.js'); ?>" type="text/javascript"></script>
     <script src="<?php echo site_url('assets/vendor/toastr/toastr.min.js'); ?>" type="text/javascript"></script>
-    <script src="<?php echo site_url('assets/js/codemirror.js'); ?>" type="text/javascript"></script>
-    <script src="<?php echo site_url('assets/js/toastr.js'); ?>" type="text/javascript"></script>
+    <script src="<?php echo site_url('assets/js/admin/codemirror.js'); ?>" type="text/javascript"></script>
+    <script src="<?php echo site_url('assets/js/admin/toastr.js'); ?>" type="text/javascript"></script>
 
 </body>
 </html>

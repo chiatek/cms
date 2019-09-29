@@ -82,31 +82,70 @@
 
                                 <div class="card-body">
                                     <h6 class="mb-4">Avatar</h6>
+
+                                    <?php $path = explode('/', $user->user_avatar); ?>
+
+                                    <?php if (in_array('admin', $path) == FALSE): ?>
+
                                     <div class="d-flex flex-wrap align-content-start">
                                         <div class="p-2 m-2">
-                                            <img src="<?php echo site_url('assets/img/admin/avatar1.png'); ?>" data-avatar="avatar1.png" class="avatar <?php echo ($user->user_avatar == 'avatar1.png') ? "selected" : ""; ?>">
+                                            <img src="<?php echo site_url('assets/img/admin/avatar1.png'); ?>" data-avatar="<?php echo site_url('assets/img/admin/avatar1.png'); ?>" class="avatar">
                                         </div>
                                         <div class="p-2 m-2">
-                                            <img src="<?php echo site_url('assets/img/admin/avatar2.png'); ?>" data-avatar="avatar2.png" class="avatar <?php echo ($user->user_avatar == 'avatar2.png') ? "selected" : ""; ?>">
+                                            <img src="<?php echo site_url('assets/img/admin/avatar2.png'); ?>" data-avatar="<?php echo site_url('assets/img/admin/avatar2.png'); ?>" class="avatar">
                                         </div>
                                         <div class="p-2 m-2">
-                                            <img src="<?php echo site_url('assets/img/admin/avatar3.png'); ?>" data-avatar="avatar3.png" class="avatar <?php echo ($user->user_avatar == 'avatar3.png') ? "selected" : ""; ?>">
+                                            <img src="<?php echo site_url('assets/img/admin/avatar3.png'); ?>" data-avatar="<?php echo site_url('assets/img/admin/avatar3.png'); ?>" class="avatar">
                                         </div>
                                         <div class="p-2 m-2">
-                                            <img src="<?php echo site_url('assets/img/admin/avatar4.png'); ?>" data-avatar="avatar4.png" class="avatar <?php echo ($user->user_avatar == 'avatar4.png') ? "selected" : ""; ?>">
+                                            <img src="<?php echo site_url('assets/img/admin/avatar4.png'); ?>" data-avatar="<?php echo site_url('assets/img/admin/avatar4.png'); ?>" class="avatar">
                                         </div>
                                         <div class="p-2 m-2">
-                                            <img src="<?php echo site_url('assets/img/admin/avatar5.png'); ?>" data-avatar="avatar5.png" class="avatar <?php echo ($user->user_avatar == 'avatar5.png') ? "selected" : ""; ?>">
+                                            <img src="<?php echo site_url('assets/img/admin/avatar5.png'); ?>" data-avatar="<?php echo site_url('assets/img/admin/avatar5.png'); ?>" class="avatar">
                                         </div>
                                         <div class="p-2 m-2">
-                                            <img src="<?php echo site_url('assets/img/admin/avatar6.png'); ?>" data-avatar="avatar6.png" class="avatar <?php echo ($user->user_avatar == 'avatar6.png') ? "selected" : ""; ?>">
+                                            <img src="<?php echo site_url('assets/img/admin/avatar6.png'); ?>" data-avatar="<?php echo site_url('assets/img/admin/avatar6.png'); ?>" class="avatar">
                                         </div>
                                     </div>
-                                    <input type="hidden" name="user_avatar" id="user_avatar" form="profile-form" value="<?php echo $user->user_avatar; ?>" />
-                                </div>
-                                <hr class="border-light m-0">
 
-                                <div class="card-body">
+                                    <?php else: ?>
+
+                                    <div class="d-flex flex-wrap align-content-start">
+                                        <div class="p-2 m-2">
+                                            <img src="<?php echo site_url('assets/img/admin/avatar1.png'); ?>" data-avatar="<?php echo site_url('assets/img/admin/avatar1.png'); ?>" class="avatar <?php echo ($user->user_avatar == site_url('assets/img/admin/avatar1.png')) ? "selected" : ""; ?>">
+                                        </div>
+                                        <div class="p-2 m-2">
+                                            <img src="<?php echo site_url('assets/img/admin/avatar2.png'); ?>" data-avatar="<?php echo site_url('assets/img/admin/avatar2.png'); ?>" class="avatar <?php echo ($user->user_avatar == site_url('assets/img/admin/avatar2.png')) ? "selected" : ""; ?>">
+                                        </div>
+                                        <div class="p-2 m-2">
+                                            <img src="<?php echo site_url('assets/img/admin/avatar3.png'); ?>" data-avatar="<?php echo site_url('assets/img/admin/avatar3.png'); ?>" class="avatar <?php echo ($user->user_avatar == site_url('assets/img/admin/avatar3.png')) ? "selected" : ""; ?>">
+                                        </div>
+                                        <div class="p-2 m-2">
+                                            <img src="<?php echo site_url('assets/img/admin/avatar4.png'); ?>" data-avatar="<?php echo site_url('assets/img/admin/avatar4.png'); ?>" class="avatar <?php echo ($user->user_avatar == site_url('assets/img/admin/avatar4.png')) ? "selected" : ""; ?>">
+                                        </div>
+                                        <div class="p-2 m-2">
+                                            <img src="<?php echo site_url('assets/img/admin/avatar5.png'); ?>" data-avatar="<?php echo site_url('assets/img/admin/avatar5.png'); ?>" class="avatar <?php echo ($user->user_avatar == site_url('assets/img/admin/avatar5.png')) ? "selected" : ""; ?>">
+                                        </div>
+                                        <div class="p-2 m-2">
+                                            <img src="<?php echo site_url('assets/img/admin/avatar6.png'); ?>" data-avatar="<?php echo site_url('assets/img/admin/avatar6.png'); ?>" class="avatar <?php echo ($user->user_avatar == site_url('assets/img/admin/avatar6.png')) ? "selected" : ""; ?>">
+                                        </div>
+                                    </div>
+
+                                    <?php endif; ?>
+
+                                    <div class="form-group mt-3 ml-4">
+                                        <div class="row">
+                                            <div class="col-9">
+                                                <input type="text" class="form-control" name="user_avatar" id="user_avatar" form="profile-form" value="<?php echo $user->user_avatar; ?>" readonly>
+                                            </div>
+                                            <div class="col-3">
+                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#image-modal">Custom</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <br /><hr /><br />
+
                                     <h6 class="mb-4">General Info</h6><br />
                                     <div class="form-group">
                                         <label class="form-label">User ID</label>
@@ -126,7 +165,7 @@
                                         <input type="text" class="form-control mb-1" name="user_email" form="profile-form" value="<?php echo $user->user_email; ?>">
                                     </div>
 
-                                    <br /><hr /><br />
+                                    <br />
 
                                     <div class="form-group">
                                         <label class="form-label">Company</label>
@@ -434,6 +473,10 @@
 		</div>
 		<!-- End Main Content -->
 
+        <!-- Image Modal -->
+        <?php $this->view('admin/components/modals/image_modal', $data); ?>
+        <!-- End Image Modal -->
+
         <!-- Toastr -->
         <?php $this->view('admin/components/common/toastr'); ?>
         <!-- End Toastr -->
@@ -449,8 +492,8 @@
     <?php $this->view('admin/components/common/javascript', $data); ?>
     <!-- Additinal Javascript -->
     <script src="<?php echo site_url('assets/vendor/toastr/toastr.min.js'); ?>" type="text/javascript"></script>
-    <script src="<?php echo site_url('assets/js/toastr.js'); ?>" type="text/javascript"></script>
-    <script src="<?php echo site_url('assets/js/theme.js'); ?>" type="text/javascript"></script>
+    <script src="<?php echo site_url('assets/js/admin/toastr.js'); ?>" type="text/javascript"></script>
+    <script src="<?php echo site_url('assets/js/admin/theme.js'); ?>" type="text/javascript"></script>
 
 </body>
 </html>

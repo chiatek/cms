@@ -100,9 +100,9 @@
     <?php $this->view('admin/components/common/javascript', $data); ?>
     <!-- Additional Javascript / Morris.js -->
     <script src="<?php echo site_url('assets/vendor/datatables/datatables.js'); ?>" type="text/javascript"></script>
-    <script src="<?php echo site_url('assets/js/datatables.js'); ?>" type="text/javascript"></script>
+    <script src="<?php echo site_url('assets/js/admin/datatables.js'); ?>" type="text/javascript"></script>
     <?php if ($config->setting_dashboard_GA): ?>
-    <script src="<?php echo site_url('assets/js/analytics.js'); ?>" type="text/javascript"></script>
+    <script src="<?php echo site_url('assets/js/admin/analytics.js'); ?>" type="text/javascript"></script>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <?php endif; ?>
 

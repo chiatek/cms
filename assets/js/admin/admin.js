@@ -28,7 +28,7 @@ $(function () {
 		};
 	});
 
-	$('[data-avatar],[data-theme],[data-icon]').click(function () {
+	$('[data-avatar],[data-theme],[data-icon],[data-media]').click(function () {
 		$('.save-btn').prop('disabled', false);
 	});
 });

@@ -102,14 +102,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label class="form-label">Avatar</label>
-                                        <select class="custom-select" name="user_avatar" form="user-form">
-                                            <option value="avatar1.png" selected>Avatar 1</option>
-                                            <option value="avatar2.png">Avatar 2</option>
-                                            <option value="avatar3.png">Avatar 3</option>
-                                            <option value="avatar4.png">Avatar 4</option>
-                                            <option value="avatar5.png">Avatar 5</option>
-                                            <option value="avatar6.png">Avatar 6</option>
-                                        </select>
+                                        <input type="text" class="form-control" name="user_avatar" form="user-form" value="<?php echo site_url('assets/img/admin/avatar1.png'); ?>">
                                     </div>
                                 </div>
 
@@ -207,7 +200,7 @@
     <?php $this->view('admin/components/common/javascript', $data); ?>
     <!-- Additinal Javascript -->
     <script src="<?php echo site_url('assets/vendor/toastr/toastr.min.js'); ?>" type="text/javascript"></script>
-    <script src="<?php echo site_url('assets/js/toastr.js'); ?>" type="text/javascript"></script>
+    <script src="<?php echo site_url('assets/js/admin/toastr.js'); ?>" type="text/javascript"></script>
 
 </body>
 </html>

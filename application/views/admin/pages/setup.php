@@ -224,7 +224,7 @@
     <!-- Additinal Javascript -->
 	<script src="<?php echo site_url('assets/vendor/validate/validate.js'); ?>" type="text/javascript"></script>
     <script src="<?php echo site_url('assets/vendor/smartwizard/jquery.smartWizard.js'); ?>" type="text/javascript"></script>
-    <script src="<?php echo site_url('assets/js/smartwizard.js'); ?>" type="text/javascript"></script>
+    <script src="<?php echo site_url('assets/js/admin/smartwizard.js'); ?>" type="text/javascript"></script>
 
 </body>
 </html>

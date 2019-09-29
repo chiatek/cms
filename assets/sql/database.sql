@@ -59,7 +59,7 @@ create table users (
 	user_linkedin varchar(200),
 	user_twitter varchar(200),
 	user_youtube varchar(200),
-	user_avatar varchar(50) not null,
+	user_avatar varchar(200),
 	user_theme varchar(25) not null,
 	user_theme_header varchar(25) not null,
 	user_theme_subheader varchar(25) not null,
@@ -103,6 +103,8 @@ create table comments (
 	post_id int(11) unsigned not null,
 	comment_date datetime not null,
 	comment_name varchar(100) not null,
+	comment_email varchar(200),
+	comment_website varchar(200),
 	comment_text text not null,
 
 	foreign key (post_id) references posts(post_id)

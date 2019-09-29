@@ -52,8 +52,13 @@ $(function() {
 
 	// image selection for image gallery modal
 	$('#image-btn').click(function () {
-		document.getElementById("featured-image").src = image;
-		document.getElementById("post_image").value = image;
+		if (document.getElementById("user_avatar")) {
+			document.getElementById("user_avatar").value = image;
+		}
+		else {
+			document.getElementById("featured-image").src = image;
+			document.getElementById("post_image").value = image;
+		}
 	});
 
 	// icon selection for favicon gallery modal
@@ -68,9 +73,6 @@ $(function() {
 		document.getElementById("site-icon").value = image;
 	});
 
-	if (window.innerWidth < 768) {
-		$('#menu-hover').prop('disabled', true);
-	}
 });
 
 function swapStyleSheet(sheet) {

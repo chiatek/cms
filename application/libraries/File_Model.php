@@ -126,14 +126,12 @@ class File_Model {
             "\t" . '<link rel="apple-touch-icon" href="<?php echo site_url("assets/img/admin/avicon.png"); ?>">' . "\n\n".
 
             "\t" . '<!-- CSS -->' . "\n".
-            "\t" . '<link rel="stylesheet" href="<?php echo site_url("assets/vendor/bootstrap/css/bootstrap.css"); ?>">' . "\n".
-            "\t" . '<link rel="stylesheet" href="<?php echo site_url("assets/vendor/fontawesome/css/font-awesome.min.css"); ?>">' . "\n".
-            "\t" . '<link rel="stylesheet" href="<?php echo site_url(config("css")); ?>">' . "\n";
+            "\t" . '<?php $this->view("components/css", $data); ?>' . "\n\n";
 
         if (!empty($config->setting_GA_code) && !empty($config->setting_GA_trackingid)) {
             $lines = explode(PHP_EOL, $config->setting_GA_code);
 
-            $new_header .= "\n\t" . '<!-- Global site tag (gtag.js) - Google Analytics -->' . "\n".
+            $new_header .= "\t" . '<!-- Global site tag (gtag.js) - Google Analytics -->' . "\n".
                 "\t" . '<script async src="https://www.googletagmanager.com/gtag/js?id='.$config->setting_GA_trackingid.'"></script>' . "\n".
                 "\t" . '<script>';
 
@@ -161,9 +159,7 @@ class File_Model {
         // Get current header html
         $current_header = get_string_between($html, '<!-- Base Javascript -->', '</body>');
 
-        $new_header = "\n\t" . '<script src="<?php echo site_url("assets/vendor/jquery/jquery-3.3.1.min.js"); ?>" type="text/javascript"></script>' . "\n".
-            "\t" . '<script src="<?php echo site_url("assets/vendor/bootstrap/js/popper.min.js"); ?>" type="text/javascript"></script>' ."\n".
-            "\t" . '<script src="<?php echo site_url("assets/vendor/bootstrap/js/bootstrap.min.js"); ?>" type="text/javascript"></script>' . "\n\n";
+        $new_header = "\n\t" . '<?php $this->view("components/javascript", $data); ?>' . "\n\n";
 
         return str_replace($current_header, $new_header, $html);
     }

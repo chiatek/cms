@@ -14,8 +14,8 @@
             <?php if (!empty($media_info)): ?>
             <div class="d-flex flex-wrap align-content-start">
                 <?php foreach ($media_info as $media): ?>
-                    <div class="m-1">
-                        <img src="<?php echo site_url('assets/img/uploads').'/'.$media['name']; ?>" data-editor="<?php echo site_url('assets/img/uploads').'/'.$media['name']; ?>" class="img-thumbnail img-fluid modal-image">
+                    <div class="image-container m-1" data-editor="<?php echo site_url('assets/img/uploads').'/'.$media['name']; ?>">
+                        <img src="<?php echo site_url('assets/img/uploads').'/'.$media['name']; ?>">
                     </div>
                 <?php endforeach; ?>
             </div>

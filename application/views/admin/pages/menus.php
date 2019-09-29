@@ -132,7 +132,7 @@
     <!-- Additional JavaScript / Nestable JS -->
     <script src="<?php echo site_url('assets/vendor/nestable/jquery.nestable.js'); ?>" type="text/javascript"></script>
     <script src="<?php echo site_url('assets/vendor/multiinput/jq.multiinput.js'); ?>" type="text/javascript"></script>
-    <script src="<?php echo site_url('assets/js/nestable.js'); ?>" type="text/javascript"></script>
+    <script src="<?php echo site_url('assets/js/admin/nestable.js'); ?>" type="text/javascript"></script>
 
     <script>
     $(document).ready(function () {

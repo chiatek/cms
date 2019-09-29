@@ -92,7 +92,7 @@
     <?php $this->view('admin/components/common/javascript', $data); ?>
     <!-- Additional JavaScript -->
     <script src="<?php echo site_url('assets/vendor/dropzone/dropzone.js'); ?>" type="text/javascript"></script>
-    <script src="<?php echo site_url('assets/js/dropzone.js'); ?>" type="text/javascript"></script>
+    <script src="<?php echo site_url('assets/js/admin/dropzone.js'); ?>" type="text/javascript"></script>
 
 </body>
 </html>

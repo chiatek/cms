@@ -81,7 +81,9 @@
                 </div>
                 <div class="dropdown">
                     <a href="#" class="nav-link pr-0 leading-none ml-4" data-toggle="dropdown">
-                        <img class="img-responsive rounded-circle user-image" id="user-image" src="<?php echo site_url('assets/img/admin/'.$user->user_avatar); ?>" alt="User picture">
+                        <?php if (!empty($user->user_avatar)): ?>
+                            <img class="img-responsive rounded-circle user-image" id="user-image" src="<?php echo $user->user_avatar; ?>" alt="User picture">
+                        <?php endif; ?>
                         <span class="ml-2 d-none d-lg-block">
                             <span class="header-link top-link"><?php echo $user->user_name; ?></span>
                             <small class="text-muted d-block mt-1"><?php echo ucfirst($user->user_role); ?></small>

@@ -5,7 +5,7 @@
 
         <!-- modal header -->
         <div class="modal-header bg-light">
-            <h5 class="modal-title">Featured Image</h5>
+            <h5 class="modal-title">Media Library</h5>
             <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
 
@@ -14,8 +14,8 @@
             <?php if (!empty($media_info)): ?>
             <div class="d-flex flex-wrap align-content-start">
                 <?php foreach ($media_info as $media): ?>
-                    <div class="m-1">
-                        <img src="<?php echo site_url('assets/img/uploads').'/'.$media['name']; ?>" data-media="<?php echo site_url('assets/img/uploads').'/'.$media['name']; ?>" class="img-thumbnail img-fluid modal-image">
+                    <div class="image-container m-1" data-media="<?php echo site_url('assets/img/uploads').'/'.$media['name']; ?>">
+                        <img src="<?php echo site_url('assets/img/uploads').'/'.$media['name']; ?>">
                     </div>
                 <?php endforeach; ?>
             </div>

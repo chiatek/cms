@@ -44,7 +44,7 @@ $config['encryption_key'] = '';
 |
 */
 $config['cms_name'] = $_SERVER['HTTP_HOST'];
-$config['cms_version'] = '2.0.0';
+$config['cms_version'] = '2.0.1';
 
 /*
 |--------------------------------------------------------------------------

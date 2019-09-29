@@ -235,6 +235,10 @@ class Users extends Admin_Controller {
             redirect('admin/users/profile');
         }
 
+        // Get upload folder info for image modal
+        $this->helper('file');
+        $this->data['media_info'] = get_dir_file_info(path('uploads'));
+
         // Set page data and load the view
         $this->data['title'] = config('cms_name') . config('title_separator') . 'Profile';
         $this->data['validation_errors'] = $this->form_validation->validation_errors();

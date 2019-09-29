@@ -222,10 +222,10 @@
     <script src="<?php echo site_url('assets/vendor/codemirror/lib/codemirror.js'); ?>" type="text/javascript"></script>
     <script src="<?php echo site_url('assets/vendor/codemirror/mode/xml/xml.js'); ?>" type="text/javascript"></script>
     <script src="<?php echo site_url('assets/vendor/summernote/summernote-bs4.js'); ?>" type="text/javascript"></script>
-    <script src="<?php echo site_url('assets/js/summernote.js'); ?>" type="text/javascript"></script>
+    <script src="<?php echo site_url('assets/js/admin/summernote.js'); ?>" type="text/javascript"></script>
     <script src="<?php echo site_url('assets/vendor/toastr/toastr.min.js'); ?>" type="text/javascript"></script>
-    <script src="<?php echo site_url('assets/js/toastr.js'); ?>" type="text/javascript"></script>
-	<script src="<?php echo site_url('assets/js/theme.js'); ?>" type="text/javascript"></script>
+    <script src="<?php echo site_url('assets/js/admin/toastr.js'); ?>" type="text/javascript"></script>
+	<script src="<?php echo site_url('assets/js/admin/theme.js'); ?>" type="text/javascript"></script>
 
 	<script>
         $(document).ready(function() {
